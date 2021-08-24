@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@portfolio/shared/svg": ["libs/shared/svg/src/index.ts"],
+      "@shared/ng-ui": ["libs/shared/ng-ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

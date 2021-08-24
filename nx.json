@@ -27,12 +27,25 @@
     ]
   },
   "projects": {
+    "ma-studio": {
+      "tags": []
+    },
+    "ma-studio-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ma-studio"]
+    },
     "portfolio": {
       "tags": []
     },
     "portfolio-e2e": {
       "tags": [],
       "implicitDependencies": ["portfolio"]
+    },
+    "shared-ng-ui": {
+      "tags": ["scope:ng", "type:ui"]
+    },
+    "shared-svg": {
+      "tags": []
     }
   }
 }
