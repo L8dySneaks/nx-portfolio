@@ -17,4 +17,4 @@ jobs:
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
-          project: ../portfolio-e2e
+          project: /portfolio-e2e
