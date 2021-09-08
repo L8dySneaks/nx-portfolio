@@ -8,3 +8,14 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
+      - name: Node
+        uses: actions/setup-node@v2
+        with:
+            node-version: '12'
+            cache: 'npm'
+      - run: npm install
+      - name: Cypress Portfolio E2E
+        uses: cypress-io/github-action@v2
+        with:
+          browser: chrome
+          project: ./apps/portfolio-e2e
