@@ -13,9 +13,8 @@ jobs:
         with:
             node-version: '12'
             cache: 'npm'
-      - run: npm install
       - name: Cypress Portfolio E2E
         uses: cypress-io/github-action@v2
         with:
           browser: chrome
-          project: ./apps/portfolio-e2e
+          project: ../apps/portfolio-e2e
