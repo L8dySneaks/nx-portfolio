@@ -1,1 +1,6 @@
-<button>Click here!</button>
+
+<input type="text" (input)="onUpdatePillName($event)">
+<p>{{ pillName }}</p>
+<button [disabled]="!allowBtnClick" (click)="onCreatePill()">Click here!</button>
+
+{{ pillWasCreated }}
