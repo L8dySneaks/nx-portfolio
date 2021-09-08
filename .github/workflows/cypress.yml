@@ -15,7 +15,8 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: E2E on Chrome
+      - name: Portfolio E2E on Chrome
         uses: cypress-io/github-actions@v2
         with:
+          start: npm serve portfolio
           browser: chrome
