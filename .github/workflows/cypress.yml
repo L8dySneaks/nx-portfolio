@@ -1,0 +1,12 @@
+name: E2E Tests
+on: [pull_request]
+jobs:
+  cypress-run:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: E2E on Chrome
+        uses: cypress-io/github-actions@v2
+        with:
+          browser: chrome
