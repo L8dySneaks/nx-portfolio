@@ -19,4 +19,5 @@ jobs:
         uses: cypress-io/github-actions@v2
         with:
           start: npm serve portfolio
+          working-directory: portfolio-e2e
           browser: chrome
