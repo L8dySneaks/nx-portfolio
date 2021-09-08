@@ -7,17 +7,4 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
-        with:
-          repository: portfolio/portfolio
-          path: portfolio
-      - name: Setup Node
-        uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - name: Portfolio E2E on Chrome
-        uses: cypress-io/github-actions@v2
-        with:
-          start: npm serve portfolio
-          working-directory: portfolio-e2e
-          browser: chrome
+        uses: actions/checkout@v2
